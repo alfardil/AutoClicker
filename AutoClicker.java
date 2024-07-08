@@ -11,11 +11,12 @@ public class AutoClicker {
     private static JButton stopButton;
     private static JTextField clickDelayField;
     private static JTextField holdDurationField;
-    private static volatile boolean running = false;
+    private static boolean running = false;
     private static Timer clickTimer;
     private static Robot robot;
 
     public static void main(String[] args) {
+        
         frame = new JFrame("Auto Clicker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 200);
